@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krein.chandratya.ChandratyaNafianto_1202154143_Modul1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Makan Malam"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="dengan Milea"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/editText_Makanan"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:ems="10"
+        android:hint="@string/editText_makanan"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <EditText
+        android:id="@+id/editText_Porsi"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_Makanan"
+        android:layout_alignStart="@+id/editText_Makanan"
+        android:layout_below="@+id/editText_Makanan"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Porsi"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_Porsi"
+        android:layout_alignStart="@+id/editText_Porsi"
+        android:layout_alignTop="@+id/editText_Porsi"
+        android:layout_marginTop="92dp"
+        android:background="#fad620"
+        android:onClick="launchEatbus"
+        android:text="EATBUS"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:text="ABNORMAL"
+        android:textColor="#ffffff"
+        android:background="#fad620"
+        android:onClick="launchAbnormal"/>
+
+</RelativeLayout>
